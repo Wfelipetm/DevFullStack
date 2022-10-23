@@ -1,0 +1,57 @@
+Algoritmo "semnome"
+// Disciplina  : Lógica de Programação
+// Professor   : Curso Desenvolvedor Full Stack Estácio de Sá
+// Descrição   : A Soma dos números primos anteriores do numero digitado
+// Autor(a)    : Wallace Felipe tavares moreira
+// Data atual  : 12/05/2022
+Var
+   num, contcheq, cont, somaPrimo : inteiro
+   ePrimo : logico
+   ePrimoAnt : logico
+
+
+Inicio
+     escreva("Digite um número: ")
+   leia (num)
+
+   ePrimo <- verdadeiro
+   contcheq <- num - 1
+   cont <- num
+
+   enquanto (cont > 1) faca
+
+    se((num mod cont) = 0 E (num <> cont)) entao
+         	ePrimo <- falso
+	 fimse
+
+    ePrimoAnt <- verdadeiro
+
+    enquanto (contcheq > 1) faca
+
+		 se((cont mod contcheq) = 0) entao
+		    ePrimoAnt <- falso
+		 fimse
+
+		 contcheq <- contcheq - 1
+     fimenquanto
+
+     se((ePrimoAnt) = verdadeiro) entao
+		    escreval("o Numero ",cont," é Primo")
+
+     somaPrimo <- cont + somaPrimo
+
+     fimse
+
+	 cont <- cont - 1
+	 contcheq <- cont - 1
+
+   fimenquanto
+
+   se((ePrimo) = verdadeiro) entao
+      escreval("o Numero ",num," é Primo")
+   fimse
+
+   escreval("A soma dos numeros anteriores é ",somaPrimo)
+   
+   
+Fimalgoritmo
