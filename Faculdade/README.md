@@ -1,4 +1,4 @@
-Esse departamento é para mostrar minha evolução na Faculdade.
+Esse departamento é para registrar minha evolução na Faculdade.
 
 Em andamento!
 
