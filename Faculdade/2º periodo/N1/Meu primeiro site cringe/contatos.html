@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Rodrigo de O. Alarcon">
+  <title>Missão 1 | Mundo 2 | Curso Estácio Dev Full Stack</title>
+
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/album/">
+
+
+
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+  </style>
+
+
+</head>
+
+<body>
+
+  <header>
+
+    <div class="navbar navbar-dark bg-dark shadow-sm">
+      <div class="container">
+        <a href="home.html" class="navbar-brand d-flex align-items-center">
+          <img src="img/vovo.png" alt="logo" style="width: 50px; height: 50px; margin-right: 10px;">
+          <strong>ReceitasNini</strong>
+          <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
+            <a class="me-3 py-2 text-dark text-decoration-none text-white" href="home.html">Home</a>
+            <a class="me-3 py-2 text-dark text-decoration-none text-white" href="receitas.html">Receitas</a>
+            <a class="me-3 py-2 text-dark text-decoration-none text-white" href="#">Contatos</a>
+          </nav>
+        </a>
+
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <main>
+      <div class="py-5 text-center">
+        <img class="d-block mx-auto mb-4" src="img/vovo.png" alt="" width="20%" height="20%">
+        <h2>Formulário de Contato</h2>
+        <p class="lead">Entre em contato conosco que em breve iremos atendê-los.</p>
+      </div>
+
+      <div class="row g-5">
+
+        <div class="col-md-7 col-lg-8">
+          <h4 class="mb-3">Efetue seu cadastro.</h4>
+          <form class="needs-validation" novalidate>
+            <div class="row g-3">
+              <div class="col-sm-6">
+                <label for="firstName" class="form-label">Primeiro nome</label>
+                <input type="text" class="form-control" id="First name" placeholder="" value="" required>
+                <div class="invalid-feedback">
+                  Nome válido é obrigatório.
+                </div>
+              </div>
+
+              <div class="col-sm-6">
+                <label for="lastName" class="form-label">Sobrenome</label>
+                <input type="text" class="form-control" id="Last name" placeholder="" value="" required>
+                <div class="invalid-feedback">
+                  O sobrenome válido é obrigatório.
+                </div>
+              </div>
+
+              <div class="col-12">
+                <label for="email" class="form-label">Email <span class="text-muted">(Opcional)</span></label>
+                <input type="email" class="form-control" id="email" placeholder="you@example.com">
+                <div class="invalid-feedback">
+                  Insira um endereço de e-mail válido para atualizações de envio.
+                </div>
+              </div>
+
+              <div class="col-12">
+                <label for="address" class="form-label">Endereço</label>
+                <input type="text" class="form-control" id="address" placeholder="1234 Main St" required>
+                <div class="invalid-feedback">
+                  Por favor insira seu endereço de entrega.
+                </div>
+              </div>
+
+              <div class="col-md-5">
+                <label for="country" class="form-label">País</label>
+                <select class="form-select" id="country" required>
+                  <option value="">Escolher...</option>
+                  <option>Brasil</option>
+                </select>
+                <div class="invalid-feedback">
+                  Selecione um país válido.
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <label for="state" class="form-label">Estado</label>
+                <select class="form-select" id="state" required>
+                  <option value="">Escolher...</option>
+                  <option>Rio de Janeiro</option>
+                </select>
+                <div class="invalid-feedback">
+                  Selecione um país válido.
+                </div>
+              </div>
+
+              <div class="col-md-3">
+                <label for="zip" class="form-label">CEP</label>
+                <input type="text" class="form-control" id="zip" placeholder="" required>
+                <div class="invalid-feedback">
+                  Código postal necessário.
+                </div>
+              </div>
+            </div>
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="save-info">
+              <label class="form-check-label" for="save-info">Salve esta informação para a próxima vez</label>
+            </div>
+            <button class="w-100 btn btn-primary btn-lg" type="submit">Cadastrar</button>
+          </form>
+        </div>
+      </div>
+    </main>
+  </div>
+  <!-- Footer -->
+  <footer class="text-muted py-5">
+    <div class="container">
+      <p class="float-end mb-1">
+        <a href="#" class="btn btn-success my-2">Ir ao Topo</a>
+      </p>
+      <p class="mb-1">Todos os Direitos Reservados &copy; ReceitasNini!</p>
+
+    </div>
+  </footer>
+
+
+  <script src="../assets/dist/js/bootstrap.bundle.min.html"></script>
+
+
+</body>
+
+
+</html>
