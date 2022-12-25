@@ -32,15 +32,37 @@
         font-size: 3.5rem;
       }
     }
+
+    a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .container {
+      padding: 0px 50px;
+    }
+
+    nav a {
+      font-size: 20px;
+    }
+
+    nav a:hover {
+      color: #5BBE42;
+    }
+
+    .contact-form input {
+      width: 100%;
+      padding: 8px 0;
+      margin: 8px 0;
+    }
+
+    .contact-form input[type=text] {
+      height: 100px;
+    }
   </style>
 
-
-</head>
-
 <body>
-
   <header>
-
     <div class="navbar navbar-dark bg-dark shadow-sm">
       <div class="container">
         <a href="home.html" class="navbar-brand d-flex align-items-center">
@@ -64,101 +86,44 @@
         <h2>Formulário de Contato</h2>
         <p class="lead">Entre em contato conosco que em breve iremos atendê-los.</p>
       </div>
-
-      <div class="row g-5">
-
-        <div class="col-md-7 col-lg-8">
-          <h4 class="mb-3">Efetue seu cadastro.</h4>
-          <form class="needs-validation" novalidate>
-            <div class="row g-3">
-              <div class="col-sm-6">
-                <label for="firstName" class="form-label">Primeiro nome</label>
-                <input type="text" class="form-control" id="First name" placeholder="" value="" required>
-                <div class="invalid-feedback">
-                  Nome válido é obrigatório.
-                </div>
-              </div>
-
-              <div class="col-sm-6">
-                <label for="lastName" class="form-label">Sobrenome</label>
-                <input type="text" class="form-control" id="Last name" placeholder="" value="" required>
-                <div class="invalid-feedback">
-                  O sobrenome válido é obrigatório.
-                </div>
-              </div>
-
-              <div class="col-12">
-                <label for="email" class="form-label">Email <span class="text-muted">(Opcional)</span></label>
-                <input type="email" class="form-control" id="email" placeholder="you@example.com">
-                <div class="invalid-feedback">
-                  Insira um endereço de e-mail válido para atualizações de envio.
-                </div>
-              </div>
-
-              <div class="col-12">
-                <label for="address" class="form-label">Endereço</label>
-                <input type="text" class="form-control" id="address" placeholder="1234 Main St" required>
-                <div class="invalid-feedback">
-                  Por favor insira seu endereço de entrega.
-                </div>
-              </div>
-
-              <div class="col-md-5">
-                <label for="country" class="form-label">País</label>
-                <select class="form-select" id="country" required>
-                  <option value="">Escolher...</option>
-                  <option>Brasil</option>
-                </select>
-                <div class="invalid-feedback">
-                  Selecione um país válido.
-                </div>
-              </div>
-
-              <div class="col-md-4">
-                <label for="state" class="form-label">Estado</label>
-                <select class="form-select" id="state" required>
-                  <option value="">Escolher...</option>
-                  <option>Rio de Janeiro</option>
-                </select>
-                <div class="invalid-feedback">
-                  Selecione um país válido.
-                </div>
-              </div>
-
-              <div class="col-md-3">
-                <label for="zip" class="form-label">CEP</label>
-                <input type="text" class="form-control" id="zip" placeholder="" required>
-                <div class="invalid-feedback">
-                  Código postal necessário.
-                </div>
-              </div>
-            </div>
-            <div class="form-check">
-              <input type="checkbox" class="form-check-input" id="save-info">
-              <label class="form-check-label" for="save-info">Salve esta informação para a próxima vez</label>
-            </div>
-            <button class="w-100 btn btn-primary btn-lg" type="submit">Cadastrar</button>
-          </form>
+      </header>
+      <form class="contact-form" action="https://formsubmit.co/wfelipetm@gmail.com" method="POST">
+        <div>
+          <label for="nome">Nome completo</label>
+          <input type="nome" id="nome" name="nome" required>
         </div>
-      </div>
-    </main>
+        <div>
+          <label for="email">E-mail</label>
+          <input type="email" name="email" required>
+        </div>
+        <div>
+          <label for="Endereço">Rua / Número / Complementos</label>
+          <input type="Endereço" id="Endereço" name="Endereço" required>
+        </div>
+        <div>
+          <label for="Cidade">Cidade / Estado</label>
+          <input type="Cidade" id="Cidade" name="Cidade" required>
+        </div>
+        <div>
+          <label for="CEP">CEP</label>
+          <input type="CEP" id="CEP" name="CEP" required>
+        </div>
+        <div>
+          <label for="message">Mensagem</label>
+          <input type="text" id="message" name="message" required>
+        </div>
+        <button type="submit">Enviar</button>
+        <input type="hidden" name="_next" value="">
+        <input type="hidden" name="_subject" value="New submission!">
+      </form>
+      <footer class="text-muted py-5">
+        <div class="container">
+          <p class="float-end mb-1">
+            <a href="#" class="btn btn-success my-2">Ir ao Topo</a>
+          </p>
+          <p class="mb-1">Todos os Direitos Reservados &copy; ReceitasNini!</p>
+        </div>
+      </footer>
+      <script src="../assets/dist/js/bootstrap.bundle.min.html"></script>
   </div>
-  <!-- Footer -->
-  <footer class="text-muted py-5">
-    <div class="container">
-      <p class="float-end mb-1">
-        <a href="#" class="btn btn-success my-2">Ir ao Topo</a>
-      </p>
-      <p class="mb-1">Todos os Direitos Reservados &copy; ReceitasNini!</p>
-
-    </div>
-  </footer>
-
-
-  <script src="../assets/dist/js/bootstrap.bundle.min.html"></script>
-
-
-</body>
-
-
-</html>
+</body
